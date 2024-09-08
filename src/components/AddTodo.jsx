@@ -25,10 +25,19 @@ const AddTodo = (props) => {
     const addTodoHandler = (e) => {
         // Due to page refresh what happens
         e.preventDefault();
-        
-        // what we are sending ? -> text 
-        dispatch(additem(input))
-        setInput('')
+
+        // TODO : WE NEED A POP-UP FOR THIS !! Basically we use biscuit !! 
+
+        if(e.target.value.length == 0){
+            console.log("Please fill the placeholder with your task !! :)")
+        }
+        else {
+            
+            
+            // what we are sending ? -> text 
+            dispatch(additem(input))
+            setInput('')
+        }
     };
 
     return (
