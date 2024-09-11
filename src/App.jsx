@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import AddTodo from './components/AddTodo';
 import Todo from './components/Todo';
 import Childdata from './components/Childdata';
-import Childdata2 from './components/Childdata2';
+
 // import products from './store/expenses.json';
 const App = () => {
 
